@@ -45,6 +45,21 @@ while running:
         grayscale=True
     )
 
+    player = pyautogui.locateOnScreen(
+        "imgs/playeroptions.png",
+        confidence=0.7
+    )
+
+    if player:
+        print("ERROR, ENDED UP ON PLAYER SCREEN")
+        pyautogui.press("esc")
+        time.sleep(0.5)
+        pyautogui.press("esc")
+        time.sleep(0.5)
+        pyautogui.press("esc")
+        time.sleep(0.5)
+        
+
     if searchbox:
         print("Search menu opened:", searchbox)
         pyautogui.press("enter")
@@ -52,26 +67,26 @@ while running:
             
         noauctions = pyautogui.locateOnScreen(
             "imgs/noauctions.png",
-            confidence=0.3,
+            confidence=0.5,
             region=NOAUCTIONSREGION,
-            grayscale=True
+            grayscale=False
         )
         available = pyautogui.locateOnScreen(
             "imgs/open.png",
             confidence=0.4,
             region=AVAILABLEREGION,
-            grayscale=True
+            grayscale=False
         )
         
 
         time.sleep(0.5)
-        if noauctions:
+        if pyautogui.pixel(1210, 540) == (255, 255, 255):
             print("No cars:",noauctions)
             pyautogui.press("esc")
             time.sleep(1)
             pyautogui.press("enter")
             continue
-        elif available:
+        elif pyautogui.pixel(233,228) != (234, 222, 0):
             pyautogui.press("y")
             time.sleep(0.1)
             pyautogui.press("down")
