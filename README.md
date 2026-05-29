@@ -5,6 +5,7 @@ This bot utilitses the python coding language and the: time, pyautogui, and keyb
 Please be aware this is very early code and may contain  a lot of bugs, feel free to submit an issue and I'll be happy to help
 
 # FEATURES
+* ONE CLICK EXE DOWNLOAD
 * Automatically searches the auction house for your desired car.
 * If the car is not available, either due to it being sold or not in the auction house, it automatically researches.
 * Quickly detect if a car is not sold, and buy it out using shortcuts.
@@ -16,7 +17,7 @@ Please be aware this is very early code and may contain  a lot of bugs, feel fre
 
 # REQUIREMENTS
 * Windows 10 or 11 (Tested on 10 Pro)
-* Python 3.11+
+* Python 3.11+ (If using source code)
 * Requirements in TXT file.
 * Monitor set to 1920x1080 resolution
 * FPS uncapped, but can be capped if experiencing instability
@@ -29,7 +30,7 @@ Please be aware this is very early code and may contain  a lot of bugs, feel fre
 
 
 # DOWNLOAD STEPS
-I do plan on adding a exe file momentarily.
+ FOR THE ONE CLICK EXE, HEAD TO THE RELEASES TAB AND DOWNLOAD 'FH6.AuctionSniper.Bot.WIN64.rar'. Extract and run, easy.
 
 1. Have python 3.11 or above installed and added to path.
 2. Download the files from github and extract to your chosen location.
