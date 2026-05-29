@@ -32,8 +32,8 @@ def exists(img, region=None):
     )
 
 
-print("Starting in 3 seconds...")
-time.sleep(3)
+print("Starting in 10 seconds...")
+time.sleep(10)
 
 
 
