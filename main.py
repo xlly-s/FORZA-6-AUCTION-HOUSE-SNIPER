@@ -37,8 +37,8 @@ def exists(img, region=None):
     )
 
 
-print("Starting in 3 seconds...")
-time.sleep(3)
+print("Starting in 10 seconds...")
+time.sleep(10)
 
 
 
@@ -68,7 +68,7 @@ while running:
     if searchbox:
         print("Search menu opened:", searchbox)
         pyautogui.press("enter")
-        time.sleep(0.85)
+        time.sleep(0.8)
             
         noauctions = pyautogui.locateOnScreen(
             "imgs/noauctions.png",
