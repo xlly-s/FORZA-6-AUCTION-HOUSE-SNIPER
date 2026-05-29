@@ -68,7 +68,8 @@ Then open up the python program, there should be a countdown of 10 seconds befor
 
 # Troubleshooting
 
-* No known bugs at the moment.
+* Sometimes it misreads stuff and goes into the player menus. (Working on better detection)
+* Sometimes misreads if a cars available. (Working on better detection)
 
 
 --
