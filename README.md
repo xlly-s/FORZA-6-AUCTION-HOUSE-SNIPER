@@ -25,6 +25,7 @@ Please be aware this is very early code and may contain  a lot of bugs, feel fre
 * English language.
 * WIRED ETHERNET IS A MUST
 * Prefrebly a small car.
+* YOU MUST HAVE MOVING BACKGROUNDS OFF UNDER VISUAL.
 
 <img width="1023" height="554" alt="forgitub2" src="https://github.com/user-attachments/assets/235eae18-fa7f-43aa-8773-51814439ca11" />
 
