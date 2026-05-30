@@ -1,5 +1,5 @@
 # FORZA HORIZON 6 AUCTION HOUSE SNIPER
-An sniper bot dedicated to the forza horizen 6 auction house, using python and image recongition.
+An sniper bot dedicated to the forza horizon 6 auction house, using python and image recongition.
 
 This bot utilitses the python coding language and the: time, pyautogui, and keyboard libaries in order to make sniping as quick as possible.
 Please be aware this is very early code and may contain  a lot of bugs, feel free to submit an issue and I'll be happy to help
