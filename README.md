@@ -83,6 +83,15 @@ Then open up the python program, there should be a countdown of 10 seconds befor
 * Fixing issues lol.
 
 
+ # EXAMPLE WINNINGS
+
+ 
+<img width="823" height="179" alt="image" src="https://github.com/user-attachments/assets/4d761312-8e76-49b2-a647-2fdc5e93d636" />
+
+
+
+
+
 THIS IS MY FIRST MAJOR RELEASE, IM HAPPY TO HELP WITH ALL ISSUES BIG OR SMALL.
 
   
