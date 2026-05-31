@@ -93,11 +93,11 @@ while running:
             continue
         elif pyautogui.pixel(233,228) != (234, 222, 0):
             pyautogui.press("y")
-            time.sleep(0.1)
+            time.sleep(0.3)
             pyautogui.press("down")
-            time.sleep(0.1)
+            time.sleep(0.2)
             pyautogui.press("enter")
-            time.sleep(0.1)
+            time.sleep(0.2)
             pyautogui.press("enter")
             time.sleep(4)
             success = pyautogui.locateOnScreen(
@@ -137,6 +137,15 @@ while running:
                 pyautogui.press("esc")
                 time.sleep(1)
                 pyautogui.press("enter")
+
+            elif pyautogui.pixel(475, 766) == (60, 198, 79):
+                print("Wrong Page... Reverting to search.")
+                pyautogui.press("esc")
+                time.sleep(2)
+                pyautogui.press("esc")
+                time.sleep(1)
+                pyautogui.press("enter")
+                time.sleep(0.5)
             else:
                 print("ERROR, idfk")
                 pyautogui.press("esc")
@@ -146,6 +155,7 @@ while running:
                 pyautogui.press("esc")
                 time.sleep(1)
                 pyautogui.press("enter")
+                time.sleep(0.5)
                 
         elif pyautogui.pixel(233,228) == (234, 222, 0):
             print("Car Sold...")
@@ -154,6 +164,14 @@ while running:
             pyautogui.press("enter")
 
         
+    elif pyautogui.pixel(475, 766) == (60, 198, 79):
+        print("Wrong Page... Reverting to search.")
+        pyautogui.press("esc")
+        time.sleep(2)
+        pyautogui.press("esc")
+        time.sleep(1)
+        pyautogui.press("enter")
+        time.sleep(0.5)
     else:
         print("Not found")
 
