@@ -1,4 +1,8 @@
+Need Support?
+
 [![Need help? Join the Discord](https://img.shields.io/badge/Need_help%3F-Join_the_Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/HdwHj7yXNAac)
+
+
 
 # FORZA HORIZON 6 AUCTION HOUSE SNIPER
 An sniper bot dedicated to the forza horizon 6 auction house, using python and image recongition.
