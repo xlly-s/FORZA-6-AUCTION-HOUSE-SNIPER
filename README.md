@@ -25,7 +25,7 @@ Please be aware this is very early code and may contain  a lot of bugs, feel fre
 * Windows 10 or 11 (Tested on 10 Pro)
 * Python 3.11+ (If using source code)
 * Requirements in TXT file.
-* Monitor set to 1920x1080 resolution
+* Monitor set to 1920x1080 resolution. IN WINDOWS, NOT FORZA
 * FPS uncapped, but can be capped if experiencing instability
 * Graphics as you want, I'd recommend low.
 * English language.
