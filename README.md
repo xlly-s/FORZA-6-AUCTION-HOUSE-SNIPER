@@ -91,8 +91,8 @@ Then open up the python program, there should be a countdown of 10 seconds befor
 
  # EXAMPLE WINNINGS
 
- 
-<img width="823" height="179" alt="image" src="https://github.com/user-attachments/assets/4d761312-8e76-49b2-a647-2fdc5e93d636" />
+ <img width="823" height="179" alt="winnings" src="https://github.com/user-attachments/assets/63f30999-ce07-4e15-a2f3-2940227cc187" />
+
 
 
 
