@@ -12,8 +12,7 @@ NOAUCTIONSREGION = (977,168,1825,944)
 SOLDREGION = (119, 212, 263, 271)
 AVAILABLEREGION = (898,617,1458,888)
 
-CONFIDENCE = 0.82
-CHECK_DELAY = 0.15
+
 
 running = True
 
@@ -38,7 +37,7 @@ def exists(img, region=None):
 
 
 print("Starting in 10 seconds...")
-time.sleep(10)
+time.sleep(3)
 
 
 
@@ -65,10 +64,25 @@ while running:
         time.sleep(0.5)
         
 
-    if searchbox:
+    if pyautogui.pixel(850, 329) == (202, 255, 2):
         print("Search menu opened:", searchbox)
         pyautogui.press("enter")
-        time.sleep(0.8)
+        auctionmenu = False
+        options = 0
+        while auctionmenu == False:
+            if pyautogui.pixel(232,119) == (255, 255, 255):
+                print("Options found")
+                time.sleep(0.3)
+
+                break
+            else:
+                print("No search options found...")
+                options = options + 1
+                if options == 100:
+                    print("ERROR")
+                    pyautogui.press("esc")
+                    options = 0
+                    continue
             
         noauctions = pyautogui.locateOnScreen(
             "imgs/noauctions.png",
@@ -88,16 +102,65 @@ while running:
         if pyautogui.pixel(1210, 540) == (255, 255, 255):
             print("No cars:",noauctions)
             pyautogui.press("esc")
-            time.sleep(1)
-            pyautogui.press("enter")
+            mainmenuopen = False
+            options = 0
+            while mainmenuopen == False:
+                if pyautogui.pixel(443,665) == (202, 255, 2):
+                    print("Options found")
+                    time.sleep(0.15)
+                    pyautogui.press("enter")
+                    break
+                else:
+                    print("No options found...")
+                    options = options + 1
+                    if options == 100:
+                        print("ERROR")
+                        pyautogui.press("esc")
+                        options = 0
+                        continue
+                        
+                    
+
             continue
         elif pyautogui.pixel(233,228) != (234, 222, 0):
             pyautogui.press("y")
-            time.sleep(0.3)
+            options = 0
+            menuopen = False
+            while menuopen == False:
+                if pyautogui.pixel(1103,384) == (0,0,0) or pyautogui.pixel(826,436) == (0,0,0) or pyautogui.pixel(1288,427) == (202, 255, 2) or pyautogui.pixel(1249,405) == (202, 255, 2):
+                    print("Options opened")
+                    time.sleep(0.1)
+                    break
+                else:
+                    print("No options found...")
+                    options = options + 1
+                    if options == 100:
+                        print("ERROR")
+                        pyautogui.press("esc")
+                        options = 0
+                        continue
+                
+                
             pyautogui.press("down")
-            time.sleep(0.2)
+            time.sleep(0.1)
             pyautogui.press("enter")
-            time.sleep(0.2)
+            buyoutmenuopen = False
+            options = 0
+            while buyoutmenuopen == False:
+                if pyautogui.pixel(938,468) == (0,0,0):
+                    print("Buyout opened")
+                    time.sleep(0.02)
+                    break
+                else:
+                    print("Waiting")
+                    options = options + 1
+                    if options == 100:
+                        print("ERROR")
+                        pyautogui.press("esc")
+                        options = 0
+                        continue
+                    
+                            
             pyautogui.press("enter")
             time.sleep(4)
             success = pyautogui.locateOnScreen(
@@ -119,8 +182,24 @@ while running:
                 pyautogui.press("esc")
                 time.sleep(0.2)
                 pyautogui.press("esc")
-                time.sleep(1)
-                pyautogui.press("enter")
+                options = 0
+                mainmenuopen = False
+                while mainmenuopen == False:
+                    if pyautogui.pixel(443,665) == (202, 255, 2):
+                        print("Options found")
+                        time.sleep(0.15)
+                        pyautogui.press("enter")
+                        break
+                    else:
+                        print("No options found...")
+                        options = options + 1
+                        if options == 100:
+                            print("ERROR")
+                            pyautogui.press("esc")
+                            options = 0
+                            continue
+
+
             elif success:
                 print("Purhcased!")
                 purchased = purchased+1
@@ -135,7 +214,24 @@ while running:
                 pyautogui.press("esc")
                 time.sleep(0.2)
                 pyautogui.press("esc")
-                time.sleep(1)
+                options = 0
+                mainmenuopen = False
+                while mainmenuopen == False:
+                    if pyautogui.pixel(443,665) == (202, 255, 2):
+                        print("Options found")
+                        time.sleep(0.15)
+                        pyautogui.press("enter")
+                        break
+                    else:
+                        print("No options found...")
+                        options = options + 1
+                        if options == 100:
+                            print("ERROR")
+                            pyautogui.press("esc")
+                            options = 0
+                            continue
+
+
                 pyautogui.press("enter")
 
             elif pyautogui.pixel(475, 766) == (60, 198, 79):
@@ -160,9 +256,22 @@ while running:
         elif pyautogui.pixel(233,228) == (234, 222, 0):
             print("Car Sold...")
             pyautogui.press("esc")
-            time.sleep(1)
-            pyautogui.press("enter")
-
+            mainmenuopen = False
+            options = 0
+            while mainmenuopen == False:
+                if pyautogui.pixel(443,665) == (202, 255, 2):
+                    print("Options found")
+                    time.sleep(0.15)
+                    pyautogui.press("enter")
+                    break
+                else:
+                    print("No options found...")
+                    options = options + 1
+                    if options == 100:
+                        print("ERROR")
+                        pyautogui.press("esc")
+                        options = 0
+                        continue
         
     elif pyautogui.pixel(475, 766) == (60, 198, 79):
         print("Wrong Page... Reverting to search.")
