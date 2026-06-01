@@ -37,7 +37,7 @@ Please be aware this is very early code and may contain  a lot of bugs, feel fre
 
 
 # DOWNLOAD STEPS
- FOR THE ONE CLICK EXE, HEAD TO THE RELEASES TAB AND DOWNLOAD 'FH6.AuctionSniper.Bot.WIN64.rar'. Extract and run, easy.
+ FOR THE ONE CLICK EXE, HEAD TO THE RELEASES TAB AND DOWNLOAD 'FH6.AuctionSniper.Bot.WIN64.exe'. Run, easy.
 
 1. Have python 3.11 or above installed and added to path.
 2. Download the files from github and extract to your chosen location.
